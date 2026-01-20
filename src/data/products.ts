@@ -10,6 +10,31 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: 'food-grade',
+    name: 'Neutral (Caustic-Free) Food-Grade Gum Powders',
+    description: 'Food-safe adhesive powders manufactured without caustic soda. Certified for direct and indirect food contact applications.',
+    features: [
+      'Food-grade certified',
+      'Caustic-free formulation',
+      'FDA compliant',
+      'Odorless and tasteless',
+      'Safe for food packaging',
+    ],
+    applications: [
+      'Food packaging',
+      'Pharmaceutical packaging',
+      'Beverage cartons',
+      'Frozen food packaging',
+      'Export food packaging',
+    ],
+    packaging: [
+      '25 kg food-grade bags',
+      '50 kg food-grade bags',
+      'Certified packaging',
+    ],
+    badges: ['Food Grade', 'FDA Compliant', 'Export Quality'],
+  },
+  {
     id: 'pasting-gum',
     name: 'Pasting Gum Powder',
     description: 'High-quality pasting gum powder designed for paper-to-paper bonding in packaging applications. Offers excellent adhesion and consistent viscosity.',
@@ -85,31 +110,6 @@ export const products: Product[] = [
     badges: ['Premium Quality', 'Export Quality'],
   },
   {
-    id: 'food-grade',
-    name: 'Neutral (Caustic-Free) Food-Grade Gum Powders',
-    description: 'Food-safe adhesive powders manufactured without caustic soda. Certified for direct and indirect food contact applications.',
-    features: [
-      'Food-grade certified',
-      'Caustic-free formulation',
-      'FDA compliant',
-      'Odorless and tasteless',
-      'Safe for food packaging',
-    ],
-    applications: [
-      'Food packaging',
-      'Pharmaceutical packaging',
-      'Beverage cartons',
-      'Frozen food packaging',
-      'Export food packaging',
-    ],
-    packaging: [
-      '25 kg food-grade bags',
-      '50 kg food-grade bags',
-      'Certified packaging',
-    ],
-    badges: ['Food Grade', 'FDA Compliant', 'Export Quality'],
-  },
-  {
     id: 'liquid-gum',
     name: 'Liquid Pasting & Corrugation Gum',
     description: 'Ready-to-use liquid adhesive solutions for high-speed production lines. Eliminates mixing time and ensures consistent application.',
@@ -128,7 +128,7 @@ export const products: Product[] = [
       'Carton sealing',
     ],
     packaging: [
-      '200 liter drums',
+      '100 liter drums',
       '1000 liter IBCs',
       'Custom containers',
     ],

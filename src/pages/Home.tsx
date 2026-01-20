@@ -10,7 +10,7 @@ const Home = () => {
     {
       icon: CheckCircle2,
       title: 'Quality Assurance',
-      description: 'Backed by 25+ years of experience, every batch is produced under strict quality control to ensure consistent bonding strength and reliable performance.',
+      description: 'Backed by 35+ years of experience, every batch is produced under strict quality control to ensure consistent bonding strength and reliable performance.',
     },
     {
       icon: Award,
@@ -173,13 +173,13 @@ const Home = () => {
                 Trusted Manufacturing Excellence
               </h2>
               <p className="text-xl text-muted mb-8">
-                25+ Years of Experience
+                35+ Years of Experience
               </p>
             </motion.div>
 
             <div className="flex flex-wrap justify-center gap-4">
               <Badge variant="default" className="text-sm py-2 px-4">
-                ISO Certified
+                Excellent Supply Network 
               </Badge>
               <Badge variant="default" className="text-sm py-2 px-4">
                 Food Grade Certified

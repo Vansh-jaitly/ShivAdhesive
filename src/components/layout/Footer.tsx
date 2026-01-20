@@ -12,7 +12,7 @@ const Footer = () => {
               Shiv Adhesive
             </h3>
             <p className="text-sm text-muted">
-              Engineering the strongest bonds for over 25 years. Trusted by leading manufacturers in packaging and corrugation industries.
+              Engineering the strongest bonds for over 35 years. Trusted by leading manufacturers in packaging and corrugation industries.
             </p>
           </div>
 

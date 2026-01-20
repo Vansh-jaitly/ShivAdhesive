@@ -17,17 +17,18 @@ const About = () => {
             About Shiv Adhesive
           </h1>
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-muted mb-6">
-  Shiv Adhesive is a family-run adhesive manufacturing business with a legacy spanning over 25 years. Founded by <strong>Shri Mithan Laal</strong> in Delhi and later established in Gurugram, Haryana, the company has built a strong reputation in the packaging and corrugation industry.
-            </p>
-            <p className="text-lg text-muted mb-6">
-              Over the years, Shiv Adhesive has evolved from a small-scale operation into a trusted supplier for packaging manufacturers, driven by a consistent focus on product quality, process reliability, and long-term customer relationships.
-            </p>
-            <p className="text-lg text-muted">
-              Today, we supply a wide range of pasting and corrugation adhesive powders and liquid solutions, serving clients across India and select export markets while maintaining strict quality standards in every batch.
-            </p>
+          <p className="text-lg text-muted mb-6">
+            Shiv Adhesive is a family-run adhesive manufacturing business with a legacy spanning over 35 years. The foundation of the company was laid by <strong>Shri Mithan Laal</strong> in Delhi, who established the business with a strong focus on quality and reliability. The operations were later expanded and firmly established in Gurugram, Haryana, under the leadership of Harish, strengthening the company’s manufacturing presence and market reach.
+          </p>
+          <p className="text-lg text-muted mb-6">
+            Over the years, Shiv Adhesive has evolved from a small-scale operation into a trusted supplier for the packaging and corrugation industry, built on consistent product performance, process reliability, and long-term customer relationships.
+          </p>
+          <p className="text-lg text-muted">
+            Today, Shiv Adhesive manufactures and supplies a wide range of pasting and corrugation adhesive powders and liquid adhesive solutions, catering to clients across India and select export markets. With state-of-the-art machinery, controlled production processes, and strict batch-wise quality checks, we ensure consistent quality in every supply, meeting the expectations of both domestic and international customers.
+          </p>
+        </div>
 
-          </div>
+
         </motion.div>
 
         {/* Mission Statement */}
