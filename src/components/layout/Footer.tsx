@@ -1,5 +1,6 @@
 import { Link } from 'wouter'
 import { Phone, Mail, MapPin } from 'lucide-react'
+import logoImg from '@/assets/logo.png'
 
 const Footer = () => {
   return (
@@ -8,9 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Info */}
           <div>
-            <h3 className="text-xl font-heading font-bold uppercase tracking-tight mb-4">
-              Shiv Adhesive
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={logoImg} alt="Shiv Adhesive Logo" className="h-36 w-auto object-contain bg-white rounded p-1" />
+              <h3 className="text-xl font-heading font-bold uppercase tracking-tight">
+                Shiv Adhesive
+              </h3>
+            </div>
             <p className="text-sm text-muted">
               Engineering the strongest bonds for over 35 years. Trusted by leading manufacturers in packaging and corrugation industries.
             </p>
@@ -52,8 +56,18 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               <li>
+                <Link href="/products#food-grade" className="text-sm text-muted hover:text-foreground transition-colors">
+                  Food-Grade Gum Powders
+                </Link>
+              </li>
+              <li>
                 <Link href="/products#pasting-gum" className="text-sm text-muted hover:text-foreground transition-colors">
                   Pasting Gum Powder
+                </Link>
+              </li>
+              <li>
+                <Link href="/products#neutral-corrugation-gum" className="text-sm text-muted hover:text-foreground transition-colors">
+                  Neutral Corrugation Gum (Caustic-Free)
                 </Link>
               </li>
               <li>
@@ -64,11 +78,6 @@ const Footer = () => {
               <li>
                 <Link href="/products#yellow-dextrin" className="text-sm text-muted hover:text-foreground transition-colors">
                   Yellow Dextrin
-                </Link>
-              </li>
-              <li>
-                <Link href="/products#food-grade" className="text-sm text-muted hover:text-foreground transition-colors">
-                  Food-Grade Gum Powders
                 </Link>
               </li>
               <li>
@@ -88,23 +97,23 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 text-muted flex-shrink-0" />
                 <span className="text-sm text-muted">
-                Plot No. 544, Sector 8 <br />
-                IMT Manesar, Gurugram <br />
-                Haryana – 122050, India <br />
+                  Plot No. 544, Sector 8 <br />
+                  IMT Manesar, Gurugram <br />
+                  Haryana – 122050, India <br />
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-muted flex-shrink-0" />
                 <a href="tel:+919650577925" className="text-sm text-muted hover:text-foreground transition-colors">
-                +91 96505 77925
-                <br />
-                +91 98110 68397
+                  +91 96505 77925
+                  <br />
+                  +91 98110 68397
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-muted flex-shrink-0" />
                 <a href="mailto:shivadhesive@gmail.com" className="text-sm text-muted hover:text-foreground transition-colors">
-                shivadhesive@gmail.com
+                  shivadhesive@gmail.com
                 </a>
               </li>
             </ul>

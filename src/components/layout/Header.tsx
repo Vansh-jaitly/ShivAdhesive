@@ -3,6 +3,7 @@ import { Link, useLocation } from 'wouter'
 import { Menu, Phone, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetClose } from '@/components/ui/sheet'
+import logoImg from '@/assets/logo.png'
 
 const Header = () => {
   const [location] = useLocation()
@@ -36,8 +37,9 @@ const Header = () => {
       {/* Main Navigation */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-heading font-bold uppercase tracking-tight">
-            Shiv Adhesive
+          <Link href="/" className="flex items-center gap-3 text-2xl font-heading font-bold uppercase tracking-tight">
+            <img src={logoImg} alt="Shiv Adhesive Logo" className="h-8 w-auto object-contain" />
+            <span>Shiv Adhesive</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,11 +48,10 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium uppercase tracking-wide transition-colors ${
-                  location === link.href
-                    ? 'text-primary'
-                    : 'text-muted hover:text-foreground'
-                }`}
+                className={`text-sm font-medium uppercase tracking-wide transition-colors ${location === link.href
+                  ? 'text-primary'
+                  : 'text-muted hover:text-foreground'
+                  }`}
               >
                 {link.label}
               </Link>
@@ -84,11 +85,10 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-lg font-medium uppercase tracking-wide py-2 border-b border-border ${
-                  location === link.href
-                    ? 'text-primary'
-                    : 'text-foreground'
-                }`}
+                className={`text-lg font-medium uppercase tracking-wide py-2 border-b border-border ${location === link.href
+                  ? 'text-primary'
+                  : 'text-foreground'
+                  }`}
               >
                 {link.label}
               </Link>
