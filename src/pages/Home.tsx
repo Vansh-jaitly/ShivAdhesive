@@ -1,6 +1,18 @@
 import { Link } from 'wouter'
 import { motion } from 'framer-motion'
-import { CheckCircle2, Award, Globe, Package, Printer, UtensilsCrossed, Box } from 'lucide-react'
+import {
+  Package, Printer, UtensilsCrossed, Box, CheckCircle2,
+  Award,
+  Globe,
+  ShieldCheck,
+  Thermometer,
+  PackageCheck,
+  Layers,
+  Dumbbell,
+  Zap,
+  Clock3,
+  Grid2x2,
+} from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -10,19 +22,70 @@ const Home = () => {
     {
       icon: CheckCircle2,
       title: 'Quality Assurance',
-      description: 'Backed by 35+ years of experience, every batch is produced under strict quality control to ensure consistent bonding strength and reliable performance.',
+      description:
+        'Manufactured under stringent quality standards, backed by over 35 years of expertise for consistent and dependable performance.',
     },
     {
       icon: Award,
       title: 'Custom Formulations',
-      description: 'Application-specific adhesive solutions developed to meet machine requirements, substrates, and industry standards.',
+      description:
+        'Tailor-made adhesive solutions engineered to meet specific applications, substrates, and industry requirements.',
     },
     {
       icon: Globe,
       title: 'Pan-India Supply',
-      description: 'A dependable supply network enabling timely delivery across India and export markets, with support for bulk and repeat orders.',
+      description:
+        'Reliable nationwide distribution with timely deliveries, bulk order support, and export-ready supply capabilities.',
     },
-  ]
+    {
+      icon: ShieldCheck,
+      title: 'Stable Viscosity',
+      description:
+        'Maintains consistent viscosity over time, ensuring smooth application and reliable bonding performance.',
+    },
+    {
+      icon: Thermometer,
+      title: 'Low Gelatinization Temperature',
+      description:
+        'Designed to perform efficiently at lower gelatinization temperatures, reducing energy consumption during processing.',
+    },
+    {
+      icon: PackageCheck,
+      title: 'Container Tolerance',
+      description:
+        'Provides superior container tolerance, maintaining bond integrity under varying packaging and handling conditions.',
+    },
+    {
+      icon: Layers,
+      title: 'Deeper Fiber Bonding',
+      description:
+        'Penetrates deeply into paper fibers to create stronger, longer-lasting adhesive bonds.',
+    },
+    {
+      icon: Dumbbell,
+      title: 'Enhanced Dry Strength',
+      description:
+        'Improves the dry strength of finished products, delivering better durability and structural stability.',
+    },
+    {
+      icon: Zap,
+      title: 'Quick Drying',
+      description:
+        'Fast-setting adhesive formulation that speeds up production while maintaining excellent bond strength.',
+    },
+    {
+      icon: Clock3,
+      title: 'Long Storage Life',
+      description:
+        'Extended shelf life with stable performance, making it suitable for long-term storage and bulk inventory.',
+    },
+    {
+      icon: Grid2x2,
+      title: 'Versatile Applications',
+      description:
+        'Suitable for a wide range of paper converting, packaging, labeling, and industrial bonding applications.',
+    },
+  ];
 
   const industries = [
     {
@@ -60,10 +123,10 @@ const Home = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h1 className="text-5xl md:text-6xl font-heading font-bold uppercase tracking-tight mb-6">
-            High-Performance Adhesive Solutions for Packaging & Corrugation Industry
+              High-Performance Adhesive Solutions for Packaging & Corrugation Industry
             </h1>
             <h2 className="text-3xl text-muted mb-8 max-w-2xl mx-auto">
-            Where Quality Meets Consistency
+              Where Quality Meets Consistency
             </h2>
             <Button size="lg" asChild>
               <Link href="/products">Explore Products</Link>
@@ -179,7 +242,7 @@ const Home = () => {
 
             <div className="flex flex-wrap justify-center gap-4">
               <Badge variant="default" className="text-sm py-2 px-4">
-                Excellent Supply Network 
+                Excellent Supply Network
               </Badge>
               <Badge variant="default" className="text-sm py-2 px-4">
                 Food Grade Certified
